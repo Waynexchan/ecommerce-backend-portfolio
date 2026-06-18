@@ -1,0 +1,41 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Databases and local data
+db.sqlite3
+*.sqlite3
+*.sqlite
+
+# Logs
+*.log
+django_debug.log
+logs/
+
+# User uploads and collected static output
+media/
+uploads/
+staticfiles/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Local settings
+local_settings.py
+settings_local.py
+
+# Nested/exported Git repositories
+advanced_swecommerce_backend.git/
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/

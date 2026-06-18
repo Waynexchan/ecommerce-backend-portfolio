@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        EMAIL_HOST_USER: ${EMAIL_HOST_USER}
+        EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD}
+        STRIPE_PUBLIC_KEY: ${STRIPE_PUBLIC_KEY}
+        STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY}
+        PAYPAL_CLIENT_ID: ${PAYPAL_CLIENT_ID}
+        PAYPAL_SECRET_ID: ${PAYPAL_SECRET_ID}
+        AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+        AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+        AWS_STORAGE_BUCKET_NAME: ${AWS_STORAGE_BUCKET_NAME}
+        AWS_S3_REGION_NAME: ${AWS_S3_REGION_NAME}
+        DATABASE_URL: ${DATABASE_URL}
+        NAME: ${NAME}
+        USER: ${USER}
+        PASSWORD: ${PASSWORD}
+        HOST: ${HOST}
+        PORT: ${PORT}
+        ALLOWED_HOSTS: ${ALLOWED_HOSTS}
+        CSRF_TRUSTED_ORIGINS: ${CSRF_TRUSTED_ORIGINS}
+        USE_S3: ${USE_S3}
+    command: gunicorn backend.wsgi:application --bind 0.0.0.0:$PORT --workers 3
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
