@@ -2,7 +2,7 @@
 
 Django REST backend for a multivendor ecommerce demo. The API supports product browsing, carts, checkout, customer accounts, vendors, payments, and reporting-friendly transactional data.
 
-This repository is prepared as a portfolio backend for Junior Data Analyst, Reporting Analyst, and BI Analyst applications. The emphasis is not only the API implementation, but also the business data model behind ecommerce activity.
+This portfolio backend supports a commercial and customer-focused career profile spanning Account Management, Customer Success, Sales Operations and Commercial Analytics. It demonstrates how customer, product, order and payment workflows are represented in an ecommerce data model.
 
 ## Tech Stack
 
@@ -38,7 +38,7 @@ This repository is prepared as a portfolio backend for Junior Data Analyst, Repo
 
 ## Frontend Repository
 
-Frontend repository: `PASTE_FRONTEND_REPO_URL_HERE`
+[Frontend repository](https://github.com/Waynexchan/ecommerce-frontend-portfolio)
 
 ## Local Setup
 
@@ -126,8 +126,14 @@ The backend data model can support practical ecommerce reporting and BI question
 
 This backend demonstrates how ecommerce transactions become structured business data. Customer browsing, cart creation, checkout, order status, product performance, vendor earnings, and payment events can all feed reporting workflows and BI dashboards.
 
-For analyst roles, this project can be presented as a data-generating application that supports later analysis in SQL, Excel, Power BI, Tableau, or Python.
+The project supports discussion of customer journeys, service coordination and sales operations, with potential later analysis in SQL, Excel, Power BI, Tableau or Python.
 
 ## GitHub Safety Note
 
 Before publishing, confirm that no real credentials, runtime logs, local databases, uploaded media, virtual environments, or generated static files are tracked. If sensitive files were previously committed, rotate those credentials and consider publishing from a clean new Git history.
+
+## Career Portfolio
+
+[Personal portfolio](https://wayne-chan-portfolio.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/waynexchan/) · [GitHub profile](https://github.com/Waynexchan)
+
+This is a development demo. It does not establish production customer adoption, SaaS customer-success ownership or commercial results. Historical S&W Luxury 9195 sales achievements relate to the separate business experience described on my profile.
